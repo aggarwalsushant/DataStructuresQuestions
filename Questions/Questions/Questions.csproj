@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStructures\LinkedList\Elements\Lists\DoublyLinkedList.cs" />
+    <Compile Include="DataStructures\LinkedList\Elements\Lists\IDoublyLinkedList.cs" />
+    <Compile Include="DataStructures\LinkedList\Elements\Lists\ILinkedList.cs" />
+    <Compile Include="DataStructures\LinkedList\Elements\Lists\ISinglyLinkedList.cs" />
     <Compile Include="QuestionFiles\Arrays\ArrayQuestions.cs" />
     <Compile Include="DataStructures\LinkedList\Elements\Node\DoublyNode.cs" />
     <Compile Include="DataStructures\LinkedList\Elements\Node\IDoublyNode.cs" />
@@ -49,6 +53,9 @@
     <Compile Include="DataStructures\LinkedList\Elements\Node\SinglyNode.cs" />
     <Compile Include="DataStructures\Tree\Elements\Node\BTreeNode.cs" />
     <Compile Include="DataStructures\Tree\Elements\Node\IBtreeNode.cs" />
+    <Compile Include="QuestionFiles\Arrays\CountHourglass.cs" />
+    <Compile Include="QuestionFiles\Arrays\GcdOfArrayOfNumbers.cs" />
+    <Compile Include="QuestionFiles\Arrays\MinProductPairwiseProductInArrayWithIntegers.cs" />
     <Compile Include="QuestionFiles\Arrays\PrintNoOfDistinctElementsInASmallWindowInArray.cs" />
     <Compile Include="QuestionFiles\LinkedList\ReverseLinkedListInGroupsOfGivenSizeV2.cs" />
     <Compile Include="QuestionFiles\LinkedList\LinkedListQuestions.cs" />

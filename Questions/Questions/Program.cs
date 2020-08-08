@@ -2,6 +2,10 @@
 using Questions.QuestionFiles.Arrays;
 
 using System;
+using Questions.Utilities;
+using System.Linq;
+using Questions.DataStructures.LinkedList.Elements.Node;
+using Questions.DataStructures.LinkedList.Elements.Lists;
 
 namespace Questions
 {
@@ -63,8 +67,16 @@ namespace Questions
             //Clusters();
 
             //ArrayQuestions.KthLargestElementInAnArray();
-            var llObj = new LinkedListQuestions();
-            llObj.ReverseLinkedListInGroupsOfGivenSizeV2();
+            //var llObj = new LinkedListQuestions();
+            //llObj.ReverseLinkedListInGroupsOfGivenSizeV2();
+
+            ISinglyLinkedList<int> linkedList = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3, 4, 5, 6, 7 }.Cast<int>());
+            Console.WriteLine(linkedList.Count);
+            //LLUtility.PrintLinkedList(linkedList);
+            linkedList.AddAtEnd(new SinglyNode<int>(8));
+            Console.WriteLine(linkedList.Count);
+            //LLUtility.PrintLinkedList(linkedList);
+
             //ArrayQuestions.MinProductPairwiseProductInArrayWithIntegers();
             //ArrayQuestions.PrintNoOfDistinctElementsInASmallWindowInArray();
             Console.ReadLine();

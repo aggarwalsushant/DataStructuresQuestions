@@ -12,55 +12,6 @@ namespace Questions.QuestionFiles.Arrays
         #endregion
 
         #region Completed
-
-        /// <summary>
-        /// MinProductPairwiseProductInArrayWithIntegers, TC: O(n), SC: O(1)
-        /// The numbers in the array could be positive or negative both.
-        ///
-        /// Another GFG question with only positive integers is
-        /// https://www.geeksforgeeks.org/minimum-product-pair-an-array-of-positive-integers/
-        /// </summary>
-        public static void MinProductPairwiseProductInArrayWithIntegers()
-        {
-            //var array = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
-
-            var array = new int[] { 2, 3, -2, -3, 4 };
-            int first, second, max;
-
-            if (array[0] < array[1])
-            {
-                first = array[0];
-                second = array[1];
-                max = second;
-            }
-            else
-            {
-                first = array[1];
-                second = array[0];
-                max = first;
-            }
-
-            for (int i = 2; i < array.Length; i++)
-            {
-                if (array[i] < first)
-                {
-                    second = first;
-                    first = array[i];
-                }
-                else if (array[i] < second)
-                {
-                    second = array[i];
-                }
-                else if (array[i] > max)
-                    max = array[i];
-            }
-
-            if (first < 0)
-                Console.Write(first * max);
-            else
-                Console.Write(first * second);
-        }
-
         public static void KthLargestElementInAnArray()
         {
             /*
@@ -229,85 +180,8 @@ namespace Questions.QuestionFiles.Arrays
             }
         }
 
-        #region Gcd_of_array_of_numbers
-        //efficient way
-        public static void GcdArray(int length, int[] arr)
-        {
-            var result = arr[0];
-            for (int i = 1; i < arr.Length; i++)
-            {
-                result = Utility.GetGcd(result, arr[i]);
-            }
 
-            Console.WriteLine(result);
-        }
 
-        // Inefficient way of calculating GCD of array of numbers
-        public static void GcdOfArray(int length, int[] array)
-        {
-            Array.Sort(array);
-
-            var hash = new HashSet<int>(array);
-
-            var gcds = new HashSet<int>();
-            var count = gcds.Distinct().Count();
-
-            while (count != 1)
-            {
-                var startNum = hash.ElementAt(0);
-                for (int i = 1; i < hash.Count(); i++)
-                {
-                    var gcd = Utility.GetGcd(startNum, hash.ElementAt(i));
-                    gcds.Add(gcd);
-                }
-
-                hash.Clear();
-
-                for (int i = 0; i < gcds.Count(); i++)
-                {
-                    hash.Add(gcds.ElementAt(i));
-                }
-                count = gcds.Distinct().Count();
-                gcds.Clear();
-            }
-
-            IEnumerable<int> list = hash.Distinct();
-
-            Utility.PrintPlainElements(list);
-            return;
-        }
-        #endregion
-
-        public static void CountHourglass()
-        {
-            var array = new int[,] {
-                { -9 , -9 , -9 , 1  , 1 , 1 },
-                { 0  , -9 , 0  , 4  , 3 , 2 },
-                { -9 , -9 , -9 , 1  , 2 , 3 },
-                { 0  , 0  , 8  , 6  , 6 , 0 },
-                { 0  , 0  , 0  , -2 , 0 , 0 },
-                { 0  , 0  , 1  , 2  , 4 , 0 }
-            };
-
-            int sum, maxSum = 0;
-            int maxX = array.GetLength(0) - 2;
-            int maxY = array.GetLength(1) - 2;
-
-            for (int m = 0; m < maxX; m++)
-            {
-                for (int k = 0; k < maxY; k++)
-                {
-                    sum = array[m, k] + array[m, k+1] + array[m, k+2]
-                            + array[m + 1, k + 1]
-                        + array[m+2, k] + array[m + 2, k + 1] + array[m + 2, k + 2];
-
-                    if (sum > maxSum)
-                        maxSum = sum;
-                }
-            }
-
-            Console.WriteLine(maxSum);
-        }
 
 
         public static bool SudokuChecker()

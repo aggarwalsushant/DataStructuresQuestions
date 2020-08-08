@@ -44,7 +44,7 @@ namespace Questions.QuestionFiles.LinkedList
         public static void ReverseLinkedList()
         {
             var list = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3 }.Cast<int>());
-            LLUtility.PrintLinkedList(list);
+            list.Print();
 
             // Take 3 elements for this process.
             ISinglyNode<int> previous, current, next;
@@ -89,7 +89,7 @@ namespace Questions.QuestionFiles.LinkedList
             }
 
             Console.WriteLine();
-            LLUtility.PrintLinkedList(list);
+            list.Print();
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Questions.QuestionFiles.LinkedList
         {
             var list = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8 }.Cast<int>());
             Console.WriteLine("Original Linked List");
-            LLUtility.PrintLinkedList(list);
+            list.Print();
             int toBeRotated = 3, counter = 0;
 
             Console.WriteLine($"Rotation count: {toBeRotated}\n");
@@ -127,7 +127,7 @@ namespace Questions.QuestionFiles.LinkedList
             list.Head = newLastNode.Next;
             newLastNode.Next = null;
 
-            LLUtility.PrintLinkedList(list);
+            list.Print();
         }
 
         /// <summary>
@@ -138,7 +138,7 @@ namespace Questions.QuestionFiles.LinkedList
             var list = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3, 4, 5, 6 }.Cast<int>());
             int counter = 2, index = 0; // reverse after 2 nodes
 
-            LLUtility.PrintLinkedList(list);
+            list.Print();
 
             var node = list.Head;
             ISinglyNode<int> intervalLinkNode = null, previous = null, current = null;
@@ -179,7 +179,7 @@ namespace Questions.QuestionFiles.LinkedList
                 current = next;
             }
 
-            LLUtility.PrintLinkedList(list);
+            list.Print();
         }
 
         /// <summary>
@@ -188,7 +188,7 @@ namespace Questions.QuestionFiles.LinkedList
         public static void ReverseLinkedListInPairs()
         {
             var list = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8 }.Cast<int>());
-            LLUtility.PrintLinkedList(list);
+            list.Print();
 
             int counter = 0;
             ISinglyNode<int> previous, current, next, intervalLinkNode;
@@ -224,7 +224,7 @@ namespace Questions.QuestionFiles.LinkedList
                 counter++;
             }
 
-            LLUtility.PrintLinkedList(list);
+            list.Print();
         }
 
         /// <summary>
@@ -234,7 +234,7 @@ namespace Questions.QuestionFiles.LinkedList
         public static void ReverseLinkedListInGroupsOfGivenSize()
         {
             var list = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }.Cast<int>());
-            LLUtility.PrintLinkedList(list);
+            list.Print();
 
             // counter for iteration tracking. Groupsize as given!
             int groupSize = 4, counter;
@@ -338,7 +338,7 @@ namespace Questions.QuestionFiles.LinkedList
                 }
             }
 
-            LLUtility.PrintLinkedList(list);
+            list.Print();
         }
         #endregion
     }

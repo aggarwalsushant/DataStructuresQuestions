@@ -70,7 +70,7 @@ namespace Questions.QuestionFiles.LinkedList
                 // to remaining "initial" list that still needs to be reversed.
                 tempNode2.Next = tempNode;
 
-                LLUtility.PrintLinkedList(list);
+                list.Print();
             }
         }
     }
