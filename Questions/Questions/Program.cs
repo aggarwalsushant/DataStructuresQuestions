@@ -67,15 +67,12 @@ namespace Questions
             //Clusters();
 
             //ArrayQuestions.KthLargestElementInAnArray();
-            //var llObj = new LinkedListQuestions();
+            var llObj = new LinkedListQuestions();
             //llObj.ReverseLinkedListInGroupsOfGivenSizeV2();
 
-            ISinglyLinkedList<int> linkedList = LLUtility.CreateSinglyLinkedList(new int[] { 1, 2, 3, 4, 5, 6, 7 }.Cast<int>());
-            Console.WriteLine(linkedList.Count);
             //LLUtility.PrintLinkedList(linkedList);
-            linkedList.AddAtEnd(new SinglyNode<int>(8));
-            Console.WriteLine(linkedList.Count);
             //LLUtility.PrintLinkedList(linkedList);
+            llObj.AddTwoNumbersContainedInLinkedLists();
 
             //ArrayQuestions.MinProductPairwiseProductInArrayWithIntegers();
             //ArrayQuestions.PrintNoOfDistinctElementsInASmallWindowInArray();

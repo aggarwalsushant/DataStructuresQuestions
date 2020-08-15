@@ -57,6 +57,7 @@
     <Compile Include="QuestionFiles\Arrays\GcdOfArrayOfNumbers.cs" />
     <Compile Include="QuestionFiles\Arrays\MinProductPairwiseProductInArrayWithIntegers.cs" />
     <Compile Include="QuestionFiles\Arrays\PrintNoOfDistinctElementsInASmallWindowInArray.cs" />
+    <Compile Include="QuestionFiles\LinkedList\AddTwoNumbersContainedInLinkedLists.cs" />
     <Compile Include="QuestionFiles\LinkedList\ReverseLinkedListInGroupsOfGivenSizeV2.cs" />
     <Compile Include="QuestionFiles\LinkedList\LinkedListQuestions.cs" />
     <Compile Include="DataStructures\LinkedList\Elements\Lists\SinglyLinkedList.cs" />
