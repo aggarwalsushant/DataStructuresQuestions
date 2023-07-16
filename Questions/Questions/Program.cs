@@ -6,6 +6,8 @@ using Questions.Utilities;
 using System.Linq;
 using Questions.DataStructures.LinkedList.Elements.Node;
 using Questions.DataStructures.LinkedList.Elements.Lists;
+using Questions.QuestionFiles.CSharp.Observer;
+using System.Threading;
 
 namespace Questions
 {
@@ -67,15 +69,16 @@ namespace Questions
             //Clusters();
 
             //ArrayQuestions.KthLargestElementInAnArray();
-            var llObj = new LinkedListQuestions();
+            //var llObj = new LinkedListQuestions();
             //llObj.ReverseLinkedListInGroupsOfGivenSizeV2();
 
             //LLUtility.PrintLinkedList(linkedList);
             //LLUtility.PrintLinkedList(linkedList);
-            llObj.AddTwoNumbersContainedInLinkedLists();
+            //llObj.AddTwoNumbersContainedInLinkedLists();
 
             //ArrayQuestions.MinProductPairwiseProductInArrayWithIntegers();
             //ArrayQuestions.PrintNoOfDistinctElementsInASmallWindowInArray();
+            
             Console.ReadLine();
             //IQueryable<object>
             //ICollection<int> a;

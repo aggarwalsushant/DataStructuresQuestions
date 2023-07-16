@@ -58,6 +58,11 @@
     <Compile Include="QuestionFiles\Arrays\GcdOfArrayOfNumbers.cs" />
     <Compile Include="QuestionFiles\Arrays\MinProductPairwiseProductInArrayWithIntegers.cs" />
     <Compile Include="QuestionFiles\Arrays\PrintNoOfDistinctElementsInASmallWindowInArray.cs" />
+    <Compile Include="QuestionFiles\CSharp\Multiple Singleton.cs" />
+    <Compile Include="QuestionFiles\CSharp\Observer\Publisher.cs" />
+    <Compile Include="QuestionFiles\CSharp\Observer\Runner.cs" />
+    <Compile Include="QuestionFiles\CSharp\Observer\Subscriber.cs" />
+    <Compile Include="QuestionFiles\CSharp\Observer\SubscriptionManager.cs" />
     <Compile Include="QuestionFiles\LinkedList\AddTwoNumbersContainedInLinkedLists.cs" />
     <Compile Include="QuestionFiles\LinkedList\ReverseLinkedListInGroupsOfGivenSizeV2.cs" />
     <Compile Include="QuestionFiles\LinkedList\LinkedListQuestions.cs" />
